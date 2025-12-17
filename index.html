@@ -2,67 +2,81 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Benim İlk Sitem</title>
+  <title>Benim Sitem</title>
 
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #0f2027;
       color: white;
     }
 
-    .card {
-      background: rgba(0, 0, 0, 0.45);
-      padding: 40px 50px;
-      border-radius: 16px;
+    /* ÜST MENÜ */
+    header {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    /* ANA ALAN */
+    .hero {
+      padding: 80px 20px;
       text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      max-width: 400px;
+      background: linear-gradient(135deg, #203a43, #2c5364);
     }
 
-    h1 {
-      margin-top: 0;
-      font-size: 32px;
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
     }
 
-    p {
+    .hero p {
       font-size: 18px;
       opacity: 0.9;
     }
 
-    button {
-      margin-top: 20px;
-      padding: 12px 28px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background: #00c6ff;
-      background: linear-gradient(45deg, #00c6ff, #0072ff);
-      color: white;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
+    /* KARTLAR */
+    .cards {
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
-    button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    .card {
+      background: #1b1b1b;
+      padding: 25px;
+      width: 260px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
-  </style>
-</head>
 
-<body>
-  <div class="card">
-    <h1>🚀 Hoş Geldin</h1>
-    <p>GitHub Pages ile hazırlanan ilk tasarımlı sitem.</p>
-    <button onclick="alert('Site çalışıyor!')">
-      Tıkla
-    </button>
-  </div>
-</body>
-</html>
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 15px;
+      opacity: 0.85;
