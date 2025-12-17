@@ -2,10 +2,67 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Site Çalışıyor</title>
+  <title>Benim İlk Sitem</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 40px 50px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #00c6ff;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
+
 <body>
-  <h1>GitHub Pages Çalışıyor</h1>
-  <p>Eğer bunu görüyorsan her şey tamam.</p>
+  <div class="card">
+    <h1>🚀 Hoş Geldin</h1>
+    <p>GitHub Pages ile hazırlanan ilk tasarımlı sitem.</p>
+    <button onclick="alert('Site çalışıyor!')">
+      Tıkla
+    </button>
+  </div>
 </body>
 </html>
